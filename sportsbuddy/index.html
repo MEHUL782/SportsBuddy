@@ -1,0 +1,51 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sports Buddy — Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Sports Buddy</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html">Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card auth-card">
+        <h2>Sign in</h2>
+        <form id="login-form">
+          <label>Email
+            <input type="email" id="email" required />
+          </label>
+          <label>Password
+            <input type="password" id="password" required minlength="6" />
+          </label>
+          <div class="row">
+            <button type="submit">Login</button>
+            <button type="button" id="signup-btn">Create account</button>
+          </div>
+        </form>
+        <p id="auth-msg" class="muted"></p>
+      </section>
+
+      <section class="card info-card">
+        <h3>What is Sports Buddy?</h3>
+        <p>
+          Sports Buddy connects people who want to play sports locally. Choose
+          sports, add events, and join groups. Admins can manage categories,
+          cities, and areas.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">&copy; <span id="year"></span> Sports Buddy — Mehul Chopra</footer>
+
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
